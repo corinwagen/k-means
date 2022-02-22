@@ -31,7 +31,6 @@ class KMeans:
             self.assignments = np.argmin(cdist(self.centers, self.points, metric=self.distance_metric), axis=0)
 
             # recompute each center as the average of its constituent points. if the "fixed" centers are horrible and are closest to no points, then die!
-            print(self.assignments)
             for i in range(n_predefined, len(self.centers)):
                 assert i in self.assignments, f"cluster {i} has no members!"
                 self.centers[i] = np.average(self.points[self.assignments==i], axis=0)
