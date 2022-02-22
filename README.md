@@ -1,5 +1,5 @@
 # k-means
-simple implementation of k-means clustering 
+*simple implementation of k-means clustering*
 
 This is a very simple Python package which performs k-means clustering. 
 In particular, this package allows one to manually set "fixed" cluster centers and optimize the rest of the clusters around them,
@@ -16,4 +16,4 @@ km.fit(crds, predefined_centers)
 print(km.centers)
 ```
 
-Corin Wagen, 2022
+*Corin Wagen, 2022*
